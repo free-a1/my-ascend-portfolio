@@ -1,0 +1,41 @@
+pip 源已配置：/etc/pip.conf
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://mirrors.aliyun.com/ubuntu resolute InRelease
+Hit:2 http://mirrors.aliyun.com/ubuntu resolute-updates InRelease
+Hit:3 http://mirrors.aliyun.com/ubuntu resolute-backports InRelease
+Hit:4 http://mirrors.aliyun.com/ubuntu resolute-security InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+105 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Rules updated
+Rules updated (v6)
+Rules updated
+Rules updated (v6)
+Rules updated
+Rules updated (v6)
+Rules updated
+Rules updated (v6)
+Firewall is active and enabled on system startup
+Synchronizing state of ufw.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable ufw
+global.index-url='https://pypi.tuna.tsinghua.edu.cn/simple'
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), deny (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW IN    Anywhere                  
+80/tcp                     ALLOW IN    Anywhere                  
+443/tcp                    ALLOW IN    Anywhere                  
+8080/tcp                   ALLOW IN    Anywhere                  
+22/tcp (v6)                ALLOW IN    Anywhere (v6)             
+80/tcp (v6)                ALLOW IN    Anywhere (v6)             
+443/tcp (v6)               ALLOW IN    Anywhere (v6)             
+8080/tcp (v6)              ALLOW IN    Anywhere (v6)             
+
+===== 部署前置配置完成 =====

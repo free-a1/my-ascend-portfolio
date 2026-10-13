@@ -1,0 +1,35 @@
+===== 1) 宿主机数据集 dataset.txt =====
+id,value
+1,10
+2,20
+3,30
+===== 2) 创建命名卷并查看 =====
+day14-data
+DRIVER    VOLUME NAME
+local     day14-data
+挂载点: /var/lib/docker/volumes/day14-data/_data
+===== 3) 写容器：Bind Mount 宿主数据集 -> 写入命名卷 -> 容器内读取 =====
+508340a5d8107707f803d608d2263f950c744f96f52b961b014f63392f26e2ca
+读取数据集: /data/dataset.txt
+id,value
+1,10
+2,20
+3,30
+===== 4) 删除写容器，新容器挂载同一命名卷再读（持久化证明）=====
+NAMES     STATUS
+读取数据集: /data/dataset.txt
+id,value
+1,10
+2,20
+3,30
+===== 5) 宿主机直接查看命名卷内数据（容器内外共享）=====
+id,value
+1,10
+2,20
+3,30
+===== 6) 匿名卷演示（不指定卷名，Docker 自动创建）=====
+12ce3f0ac30b3a7dca5899183d64d0f8c13ab9a0e5d63f295cb085027ba9ba83
+day14-data
+===== 7) 清理命名卷用法（默认注释：删除后数据丢失）=====
+# sudo docker volume rm day14-data
+===== 数据持久化实验完成 =====

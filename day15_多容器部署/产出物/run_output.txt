@@ -1,0 +1,32 @@
+===== 1) 创建自定义网络 day15-net =====
+51f79f2cd5218508c8d9d90b127ef2f76ee4367a2094621d4e216aa101dd021e
+===== 2) 启动推理容器 infer（-p 5000:5000）=====
+703a98dcc4738c91fa16651fa2cb5753d721a80183e459a9d17e57ee2db90b59
+===== 3) 启动前端容器 frontend（-p 8080:8080）=====
+2041db3c69fbd8e8c2a59baf8ec14ee5e6b3dedd1a3770eb37e358479386bbbc
+===== 4) 多容器运行状态 docker ps =====
+NAMES      PORTS                                         STATUS
+frontend   0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp   Up 2 seconds
+infer      0.0.0.0:5000->5000/tcp, [::]:5000->5000/tcp   Up 2 seconds
+===== 5) 自定义网络中的容器与 IP（验证互联）=====
+网络 day15-net 容器: frontend(172.18.0.3/16) infer(172.18.0.2/16) 
+===== 6) 宿主机访问前端 8080，前端再调用后端推理 =====
+前端调用推理服务结果:
+{"result": 1.4, "msg": "infer ok"}
+
+===== 7) 前端容器内直接访问推理服务（容器间通信）=====
+{"result": 1.4, "msg": "infer ok"}
+===== 8) 生成 docker-compose.yml（编排示例，仅展示）=====
+services:
+  infer:
+    image: python:3.11-slim
+    command: python /app/infer_server.py
+    ports:
+      - "5000:5000"
+  frontend:
+    image: python:3.11-slim
+    command: python /app/frontend_server.py
+    ports:
+      - "8080:8080"
+===== 9) 清理：停止删除容器与网络 =====
+===== 多容器部署完成 =====

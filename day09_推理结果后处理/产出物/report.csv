@@ -1,0 +1,5 @@
+image_id,rank,label,score,x,y,w,h
+image_001,1,cat,0.95,10,20,100,80
+image_001,2,dog,0.82,50,60,120,90
+image_002,1,person,0.91,0,0,64,64
+image_003,1,dog,0.72,12,34,56,78

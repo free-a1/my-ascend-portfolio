@@ -1,0 +1,44 @@
+[
+  {
+    "filename": "bird_species_0001.jpg",
+    "class": "bird_species",
+    "path": "dataset/processed/bird_species/bird_species_0001.jpg",
+    "source": "dataset/raw/Bird Species!/bird_species_1.jpg",
+    "size_bytes": 1178
+  },
+  {
+    "filename": "cat_0001.jpg",
+    "class": "cat",
+    "path": "dataset/processed/cat/cat_0001.jpg",
+    "source": "dataset/raw/cat/cat_1.jpg",
+    "size_bytes": 1160
+  },
+  {
+    "filename": "cat_0002.jpg",
+    "class": "cat",
+    "path": "dataset/processed/cat/cat_0002.jpg",
+    "source": "dataset/raw/cat/cat_2.jpg",
+    "size_bytes": 1172
+  },
+  {
+    "filename": "cat_0003.jpg",
+    "class": "cat",
+    "path": "dataset/processed/cat/cat_0003.jpg",
+    "source": "dataset/raw/cat/cat_3.jpg",
+    "size_bytes": 1172
+  },
+  {
+    "filename": "dog_0001.jpg",
+    "class": "dog",
+    "path": "dataset/processed/dog/dog_0001.jpg",
+    "source": "dataset/raw/dog/dog_1.jpg",
+    "size_bytes": 1151
+  },
+  {
+    "filename": "dog_0002.jpg",
+    "class": "dog",
+    "path": "dataset/processed/dog/dog_0002.jpg",
+    "source": "dataset/raw/dog/dog_2.jpg",
+    "size_bytes": 1165
+  }
+]

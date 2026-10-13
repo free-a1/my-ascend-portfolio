@@ -1,0 +1,175 @@
+{
+  "base_url": "http://127.0.0.1:33977",
+  "total": 6,
+  "ok": 6,
+  "failed": 0,
+  "results": [
+    {
+      "image": "images/bird_species_0001.jpg",
+      "filename": "bird_species_0001.jpg",
+      "predictions": [
+        {
+          "label": "dog",
+          "score": 0.5961,
+          "bbox": [
+            10,
+            20,
+            100,
+            80
+          ]
+        },
+        {
+          "label": "dog",
+          "score": 0.8484,
+          "bbox": [
+            10,
+            20,
+            100,
+            80
+          ]
+        },
+        {
+          "label": "dog",
+          "score": 0.8626,
+          "bbox": [
+            10,
+            20,
+            100,
+            80
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/cat_0001.jpg",
+      "filename": "cat_0001.jpg",
+      "predictions": [
+        {
+          "label": "person",
+          "score": 0.5835,
+          "bbox": [
+            10,
+            20,
+            100,
+            80
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/cat_0002.jpg",
+      "filename": "cat_0002.jpg",
+      "predictions": [
+        {
+          "label": "car",
+          "score": 0.8008,
+          "bbox": [
+            10,
+            20,
+            100,
+            80
+          ]
+        },
+        {
+          "label": "person",
+          "score": 0.582,
+          "bbox": [
+            10,
+            20,
+            100,
+            80
+          ]
+        },
+        {
+          "label": "cat",
+          "score": 0.5242,
+          "bbox": [
+            10,
+            20,
+            100,
+            80
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/cat_0003.jpg",
+      "filename": "cat_0003.jpg",
+      "predictions": [
+        {
+          "label": "car",
+          "score": 0.589,
+          "bbox": [
+            10,
+            20,
+            100,
+            80
+          ]
+        },
+        {
+          "label": "cat",
+          "score": 0.6302,
+          "bbox": [
+            10,
+            20,
+            100,
+            80
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/dog_0001.jpg",
+      "filename": "dog_0001.jpg",
+      "predictions": [
+        {
+          "label": "person",
+          "score": 0.6256,
+          "bbox": [
+            10,
+            20,
+            100,
+            80
+          ]
+        },
+        {
+          "label": "car",
+          "score": 0.5302,
+          "bbox": [
+            10,
+            20,
+            100,
+            80
+          ]
+        },
+        {
+          "label": "car",
+          "score": 0.816,
+          "bbox": [
+            10,
+            20,
+            100,
+            80
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/dog_0002.jpg",
+      "filename": "dog_0002.jpg",
+      "predictions": [
+        {
+          "label": "dog",
+          "score": 0.9426,
+          "bbox": [
+            10,
+            20,
+            100,
+            80
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

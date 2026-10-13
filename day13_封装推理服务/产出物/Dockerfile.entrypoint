@@ -1,0 +1,5 @@
+FROM python:3.11-slim
+ENV MODEL_NAME=day13-entry
+WORKDIR /workspace
+COPY app.py .
+ENTRYPOINT ["python", "app.py"]

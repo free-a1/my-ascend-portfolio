@@ -1,0 +1,7 @@
+filename,class,path,source,size_bytes
+bird_species_0001.jpg,bird_species,dataset/processed/bird_species/bird_species_0001.jpg,dataset/raw/Bird Species!/bird_species_1.jpg,1178
+cat_0001.jpg,cat,dataset/processed/cat/cat_0001.jpg,dataset/raw/cat/cat_1.jpg,1160
+cat_0002.jpg,cat,dataset/processed/cat/cat_0002.jpg,dataset/raw/cat/cat_2.jpg,1172
+cat_0003.jpg,cat,dataset/processed/cat/cat_0003.jpg,dataset/raw/cat/cat_3.jpg,1172
+dog_0001.jpg,dog,dataset/processed/dog/dog_0001.jpg,dataset/raw/dog/dog_1.jpg,1151
+dog_0002.jpg,dog,dataset/processed/dog/dog_0002.jpg,dataset/raw/dog/dog_2.jpg,1165

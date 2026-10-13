@@ -1,0 +1,12 @@
+{
+  "total_images": 3,
+  "total_boxes": 4,
+  "by_label": {
+    "dog": 2,
+    "cat": 1,
+    "person": 1
+  },
+  "avg_score": 0.85,
+  "max_score": 0.95,
+  "min_score": 0.72
+}

@@ -1,0 +1,11 @@
+services:
+  infer:
+    image: python:3.11-slim
+    command: python /app/infer_server.py
+    ports:
+      - "5000:5000"
+  frontend:
+    image: python:3.11-slim
+    command: python /app/frontend_server.py
+    ports:
+      - "8080:8080"

@@ -1,0 +1,9 @@
+FROM python:3.11-slim AS builder
+WORKDIR /workspace
+COPY app.py .
+RUN python -c "print('builder 阶段检查 app.py 存在')"
+FROM python:3.11-slim
+ENV MODEL_NAME=day13-multi
+WORKDIR /workspace
+COPY --from=builder /workspace/app.py .
+CMD ["python", "app.py"]

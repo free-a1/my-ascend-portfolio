@@ -1,0 +1,24 @@
+推理脚本 infer.py 已生成:
+# 容器内推理演示：3x1 输入向量与 3x2 权重矩阵的前向计算
+# （原 torch 版 x @ w 的等价纯 Python 实现，避免拉取数 GB 的 pytorch 镜像）
+x = [1.0, 2.0, 3.0]
+w = [[0.1, 0.4], [0.2, 0.5], [0.3, 0.6]]
+y = [round(sum(xi * wi for xi, wi in zip(x, col)), 4) for col in zip(*w)]
+print("输入:", x)
+print("推理输出:", y)
+===== 1) 启动推理容器（-d 后台 + -v 挂载宿主目录）=====
+fff6bb06a1c827c00dbedd91eb51af79afa4352c23d9a80c853a987a6fcf065b
+===== 2) 容器状态（docker ps / ps -a）=====
+NAMES         IMAGE              STATUS
+day12-infer   python:3.11-slim   Up Less than a second
+NAMES         IMAGE              STATUS
+day12-infer   python:3.11-slim   Up Less than a second
+===== 3) exec 进入容器执行推理 =====
+输入: [1.0, 2.0, 3.0]
+推理输出: [1.4, 3.2]
+===== 4) 生命周期管理 stop / start / restart / rm =====
+NAMES         STATUS
+day12-infer   Up Less than a second
+--- 销毁后 docker ps -a ---
+NAMES     STATUS
+===== 容器内推理完成 =====

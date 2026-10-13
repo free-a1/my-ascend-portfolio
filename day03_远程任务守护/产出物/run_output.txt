@@ -1,0 +1,35 @@
+~/.ssh/id_rsa 已存在，复用现有密钥
+免密登录成功
+后台训练任务 PID：846
+lenovo       846       1  0 18:16 ?        00:00:00 /bin/bash /home/lenovo/train_remote.sh
+lenovo       851     846  0 18:16 ?        00:00:00 date +%T
+===== 训练日志 =====
+训练开始 18:16:29
+训练结束 18:16:39
+Linux LAPTOP-803QLBCS 6.18.54.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Tue Oct  6 19:13:07 UTC 2026 x86_64 GNU/Linux
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.9G  954G   1% /
+148K	/home/lenovo
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       596Mi       6.5Gi       4.2Mi       682Mi       7.0Gi
+Swap:          2.0Gi          0B       2.0Gi
+Tue Oct 13 18:16:39 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 565.72                 Driver Version: 566.14         CUDA Version: 12.7     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3060 ...    On  |   00000000:01:00.0 Off |                  N/A |
+| N/A   45C    P8             10W /   89W |     239MiB /   6144MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+

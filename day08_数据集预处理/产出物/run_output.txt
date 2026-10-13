@@ -1,0 +1,3 @@
+完成：6 张图片
+类别统计： {'bird_species': 1, 'cat': 3, 'dog': 2}
+标注清单：dataset/annotations.csv / dataset/annotations.json

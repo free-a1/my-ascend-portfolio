@@ -1,0 +1,25 @@
+===== 1) 镜像上下文文件 =====
+Dockerfile
+Dockerfile.entrypoint
+Dockerfile.multi
+app.py
+run_output.txt
+===== 2) 构建并运行 CMD 版镜像 =====
+模型名称: day13-infer
+输入: [1.0, 2.0, 3.0]
+推理输出: [1.4, 3.2]
+===== 3) 构建并运行 ENTRYPOINT 版镜像 =====
+模型名称: day13-entry
+输入: [1.0, 2.0, 3.0]
+推理输出: [1.4, 3.2]
+===== 4) 构建并运行多阶段构建版镜像 =====
+模型名称: day13-multi
+输入: [1.0, 2.0, 3.0]
+推理输出: [1.4, 3.2]
+===== 5) 本地镜像列表 =====
+REPOSITORY    TAG         SIZE
+day13-multi   latest      187MB
+day13-entry   latest      187MB
+day13-infer   latest      187MB
+python        3.11-slim   189MB
+===== 封装推理服务完成 =====
